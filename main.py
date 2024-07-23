@@ -16,5 +16,5 @@ for token in tokens:
         string += f"{key}: {value}\n"
 
     string += "\n\n\n"
-
-    send_email("Hamster Kombat", string)
+    
+    send_email(f"Collect Passive Earn", string)
