@@ -12,7 +12,7 @@ for token in tokens:
     data = hamster.collect_passive_earn()
 
     string = ""
-    for key, value in data.items:
+    for key, value in data.items():
         string += f"{key}: {value}\n"
 
     string += "\n\n\n"
