@@ -17,4 +17,4 @@ for token in tokens:
 
     string += "\n\n\n"
     
-    send_email(f"Collect Passive Earn <First Project>", string)
+    send_email(f"Hamster Kombat - Collect Passive Earn", string)
