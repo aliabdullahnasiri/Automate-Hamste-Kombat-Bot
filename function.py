@@ -5,7 +5,7 @@ from typing import Callable
 import requests
 
 
-def json_decode_error_handler(func: Callable):  # -> Callable:
+def json_decode_error_handler(func: Callable) -> Callable:
     """
     Decorator to handle JSONDecodeError exceptions raised by a function.
 
@@ -37,7 +37,9 @@ def json_decode_error_handler(func: Callable):  # -> Callable:
         try:
             return func(*args, **kwargs)
         except requests.exceptions.JSONDecodeError as e:
-            return f"{e}"
+            print(f"{e}")
+
+            return {}
 
     return wrapper
 
